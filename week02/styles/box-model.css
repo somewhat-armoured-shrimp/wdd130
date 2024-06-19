@@ -1,30 +1,31 @@
 .callout {
-	max-width: 600px;
-	margin: 100px;
-	background-color: rgb(25, 52, 93);
-	padding: 10px;
+	max-width: 400px;
+	margin: 10px;
+	background-color: rgb(31, 52, 85); /* keepin this colour idc */
+	padding: 15px;
+	border: 10px solid whitesmoke;
 	color: whitesmoke
 }
 
 .callout img {
-	float: inline-end;
-	margin: 10px;
+	float: right; /* i used inline-end before. i wonder what the difference is */
+	margin: 0 0 10px 15px; /* forgor. REMEMBER THE CLOCK FOR YOUR MARGINS */
 	padding: 3px;
 	width: 100px;
-	
+	height: auto; /* mhmmmm to get the appropriate height according to the width */
 	background-color: rgb(178, 176, 165);
-	border: 2px solid black
+	border: 1px solid black /* pixel, style, colour */
 	
 }
 
 blockquote {
-	margin: 20px;
+	margin: 0; /* ??? ah I see it, it looks good actually. adding the px is not important for 0, but it is for everything else */
 }
 
 cite {
 	display: block;
-	text-align: end;
-	font-size: 16px;
+	text-align: right; /* changing ends to rights because I assume it's more proper? */
+	font-size: 14px;
 	padding-top: 5px;
 	border-top: 2px dotted white
 }
