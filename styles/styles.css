@@ -1,5 +1,5 @@
 nav {
-    background-color: rgb(4, 1, 61); /* i like navy blue */
+    background-color: rgb(17, 22, 56); /* i like navy blue */
     padding: 10px;
 }
 
@@ -10,17 +10,46 @@ nav a {
 }
 
 h1 {
-    color: rgb(4, 1, 61);
+    color: rgb(26, 32, 71);
 }
 
 img {
     width: 150px;
     height: auto;
-    border: 1px solid rgb(4, 1, 61);
+    border: 1px solid rgb(17, 22, 56);
     padding: 2px;
-    box-shadow: 0 0 20px rgb(156, 151, 185); /* idk */
+    box-shadow: 0 0 20px rgb(156, 151, 185); /* shadoowwee */
 }
 
-p {
-    padding: 10px;    
+p { padding: 0;}
+
+main {
+    max-width: 840px;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+}
+
+aside {
+    color: rgb(43, 54, 112); 
+    width: 20rem;
+    background-color: rgb(235, 239, 247); 
+    margin: 0;
+    border: 1px solid rgb(118, 131, 154); 
+    padding: 1rem;
+}
+
+aside img {
+    height: auto;
+    width: 200px
+}
+
+footer {
+    text-align: center;
+    border-top: 1px solid rgb(118, 131, 154);
+    margin-top: 15px
+    
+    
 }
