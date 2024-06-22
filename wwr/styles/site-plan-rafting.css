@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+:root {
+    --primary-color: #37376C; /* #0D0D2C 'delft blue' man what */
+    --secondary-color: #EAE6E5; /* #EAE6E5 off-white MIGHT CHANGE IT LATER IDK if i should just use white idk WE WILL SEE */
+    --accent1-color: #BF0030; /* #BF0030 red */
+    --accent2-color: #0E0C30; /* #0E0C30 super navy blue. a filler colour that does not yet serve its purpose. */
+                                
+    --heading-font: 'Roboto Slab', serif;
+    --paragraph-font: 'Roboto Slab', serif;
+    
+    --nav-background-color: #EAE6E5;
+    --nav-link-color: #37376C;
+    --nav-hover-link-color: #BF0030;
+    --nav-hover-background-color: #EAE6E5;
+
+    body {
+        font-family: var(--paragraph-font);
+        max-width: 960px;
+        padding: 20px;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color)
+}
+
+header {
+    padding: 20px;
+    background-color: var(--secondary-color);
+}
+
+p {
+    padding: 25px;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
