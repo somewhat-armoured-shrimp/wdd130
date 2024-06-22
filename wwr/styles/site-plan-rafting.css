@@ -20,11 +20,13 @@ body {
     --nav-hover-link-color: #BF0030;
     --nav-hover-background-color: #EAE6E5;
 
-    body {
-        font-family: var(--paragraph-font);
-        max-width: 960px;
-        padding: 20px;
-    }
+    
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
