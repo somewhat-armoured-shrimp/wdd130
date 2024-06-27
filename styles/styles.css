@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 nav {
     background-color: rgb(17, 22, 56); /* i like navy blue */
     padding: 10px;
@@ -11,6 +17,7 @@ nav a {
 
 h1 {
     color: rgb(26, 32, 71);
+    margin: 1rem;
 }
 
 img {
@@ -21,7 +28,9 @@ img {
     box-shadow: 0 0 20px rgb(156, 151, 185); /* shadoowwee */
 }
 
-p { padding: 0;}
+p { 
+    padding: 0rem 1rem 1rem 1rem; /* I guess idk */
+}
 
 main {
     max-width: 840px;
@@ -30,18 +39,23 @@ main {
 main img {
     width: 150px;
     height: auto;
+    float: right;
 }
 
-aside {
-    color: rgb(43, 54, 112); 
+aside { 
     width: 20rem;
-    background-color: rgb(235, 239, 247); 
-    margin: 0;
-    border: 1px solid rgb(118, 131, 154); 
-    padding: 1rem;
+    position: relative;
+}
+
+aside h2 {
+    color: white;
+    position: absolute;
+    top: 110px;
+    left: 42px;
 }
 
 aside img {
+    margin: 1rem;
     height: auto;
     width: 200px
 }
@@ -50,6 +64,14 @@ footer {
     text-align: center;
     border-top: 1px solid rgb(118, 131, 154);
     margin-top: 15px
-    
-    
+}
+
+/* Class Selectors */
+
+.box {
+    margin: 0rem 0rem 1rem 1rem;
+    border: 1px solid rgb(118, 131, 154);
+    padding: 1rem;
+    background-color: rgb(235, 239, 247);
+    color: rgb(43, 54, 112); 
 }
