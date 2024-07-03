@@ -1,23 +1,31 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
 }
 
 nav {
     background-color: rgb(17, 22, 56); /* i like navy blue */
-    padding: 10px;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 18px;
 }
 
 nav a {
+    display: block;
+    text-decoration: none;
     color: white;
     display: block;
-    padding: 20px;
+    padding: 1rem;
 }
 
 h1 {
     color: rgb(26, 32, 71);
     margin: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid rgb(26, 32, 71);
 }
 
 img {
@@ -25,15 +33,18 @@ img {
     height: auto;
     border: 1px solid rgb(17, 22, 56);
     padding: 2px;
-    box-shadow: 0 0 20px rgb(156, 151, 185); /* shadoowwee */
+    box-shadow: 0 0 20px rgb(161, 161, 168); /* shadoowwee */
 }
 
 p { 
     padding: 0rem 1rem 1rem 1rem; /* I guess idk */
 }
 
+
 main {
-    max-width: 840px;
+    grid-column: 2/3;
+    margin: 1rem;
+    color:rgb(26, 32, 71)/* yuh USELESS */
 }
 
 main img {
@@ -45,19 +56,23 @@ main img {
 aside { 
     width: 20rem;
     position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 aside h2 {
     color: white;
     position: absolute;
-    top: 110px;
-    left: 42px;
+    top: 100px;
+    left: 50px;
 }
 
 aside img {
     margin: 1rem;
     height: auto;
-    width: 200px
+    padding: 0;
+    box-shadow: 0 0 20px rgb(140, 149, 196); /* different surfaces, different shadows */
+    width: 200px;
 }
 
 footer {
@@ -70,8 +85,13 @@ footer {
 
 .box {
     margin: 0rem 0rem 1rem 1rem;
-    border: 1px solid rgb(118, 131, 154);
-    padding: 1rem;
+    border: 1px solid rgb(178, 188, 207);
+    padding: 1.5rem;
     background-color: rgb(235, 239, 247);
     color: rgb(43, 54, 112); 
+}
+
+.grid {
+    display: grid;
+    align-items: center;
 }
