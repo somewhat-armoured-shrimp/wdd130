@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+    color:#063c57
+}
+
+header {
+    color: rgb(6, 60, 87); /* this is such a nice colour ??? */
+    
+}
+
+h1 {
+    margin: 1rem;
+    text-align: center;
+}
+
+form {
+    display: grid;
+    width: 60%;
+    margin: 0 auto; /* centers with margin when there's a set width? there's prolly more nuance but i think understand now bless */
+    padding: 3rem;
+    border: 1px solid rgba(6, 60, 87, 0.2);
+    border-radius: 10px;
+    background-color: rgb(233, 235, 239);
+}
+
+fieldset {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    margin: 2rem;
+    border: 1px solid rgba(6, 60, 87, 0.3);
+    border-radius: 5px;
+}
+
+legend {
+    padding: 4px;
+    color: rgb(0, 23, 42);
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+input, select, textarea {
+    padding: 0.3rem;
+    font-size: 16px;
+    border: 1px solid rgba(6, 60, 87, 0.3);
+    border-radius: 5px;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+}
+
+button {
+    padding: 0.5rem;
+    background-color: #063c57;
+    color: white;
+    border: 1px solid rgba(0, 10, 47, 0.5);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: rgb(21, 126, 147);
+    border: 1px solid rgba(0, 10, 47, 0.2);
+}
+
+footer {
+    width: 60%;
+    margin: 1rem auto;
+    text-align: center;
+    border-top: 1px solid rgba(0, 10, 47, 0.2);
+    padding-top: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
