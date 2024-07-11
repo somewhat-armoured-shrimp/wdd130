@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Quiz | WDD 130</title>
+        <link rel="stylesheet" href="styles/quiz.css">
+    </head>
+    <body>
+        <header>
+            <h1>Basic HTML and CSS Quiz</h1>
+        </header>
+        <main> <!-- idk man main is what i did last time 🤷🏻‍♀️-->
+            <form class="questions">
+                <div class="row1">
+                    <label for="q1">1) What does HTML stand for?</label>
+                    <input type="text" id="q1" name="q1">
+                </div>
+                <div class="row2">
+                    <label for="q2">2) Define a semantic element in HTML.</label>
+                    <textarea id="q2" name="q2" rows="4" placeholder="Enter text"></textarea>
+                </div>
+                <div class="row3">
+                    <label for="q3">3) Which of these properties is the proper shorthand for <span>grid-row-start</span> and <span>grid-row-end</span>?</label>
+                    <select id="q3" name="q3">
+                        <option value=" " selected disabled>Choose One...</option>
+                        <option value="grid-row-start-end">grid-row-start-end</option> <!-- isn't it awful -->
+                        <option value="grid">grid</option>
+                        <option value="grid-row">grid-row</option>
+                    </select>
+                </div>
+                <div class="row4">
+                    <label for="q4">4) What is the bottom margin given in this declaration?</label> <!-- darn it it's a good question and I'm going to steal it -->
+                    <img src="images/quiz-margin-screenshot.jpg" alt="margin: 10px 5px 15px;">
+                    <input type="number" id="q4" name="q4">
+                </div>
+                <button type="submit">Submit Quiz</button>
+            </form>
+        </main>
+    </body>
+</html>
