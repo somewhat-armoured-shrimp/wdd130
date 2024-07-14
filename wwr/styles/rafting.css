@@ -10,6 +10,8 @@
     --paragraph-font: 'Roboto Slab', serif;
 }
 
+/* header rules */
+
 header {
     margin: 1rem auto;
     display: grid;
@@ -35,10 +37,19 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--primary-color);
 }
 
+/* p body and sherman :) */
+
+body {
+    font-family: var(--paragraph-font);
+    color: var(--primary-color);
+}
+
 p {
     font-family: var(--paragraph-font);
     color: var(--primary-color);
 }
+
+/* footer garbo */
 
 footer p {
     display: flex;
@@ -52,7 +63,11 @@ footer p {
     text-align: right;
 }
 
-/* history class but the cool kind */
+/**********************************************************
+
+history class but the cool kind. also start of ABOUT US? 
+
+**********************************************************/
 
 .history h2 {
     display: flex;
@@ -100,9 +115,6 @@ footer p {
 
 }
 
-
-
-
 nav a {
     text-decoration: none;
     font-family: var(--paragraph-font);
@@ -143,12 +155,11 @@ nav a {
     padding: 100px;
     margin: 200px;
 }
-/*rgba(14, 12, 48, 0.7)*/
 
 .hero h1 {
     position: absolute;
     padding: 2rem 20px 2rem 20px;
-    background-color: rgba(1, 0, 17, 0.7);
+    background-color: rgba(1, 0, 17, 0.7); /*rgba(14, 12, 48, 0.7)*/
     color: var(--secondary-color);
     width: 984px;
     margin: 3rem 0 0 0;
@@ -172,3 +183,104 @@ nav a {
     float: right;
     margin: 10px;
 }
+
+/**********************************************************
+
+start of CONTACT US? ??
+
+**********************************************************/
+
+
+/* AHHHAIFG GFJ i am leaving this ugly for now i do not have the time */
+
+.contact-us h1 {
+    text-align: center;
+}
+
+.form-n-map {
+    display: flex;
+    justify-content: center;
+    
+}
+
+form {
+    display: flex;
+    border: 2px solid var(--primary-color);
+    border-radius: 1px;
+}
+
+.fieldsets {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+}
+
+.map {
+    background-color: var(--primary-color);
+    border-top: 5px solid var(--primary-color);
+    border-right: 7px solid var(--primary-color);
+    border-left: 4px solid var(--primary-color);
+    border-radius: 1px;
+}
+
+.field1 {
+    display: flex;
+    padding: 1rem 4rem 1rem 1rem;
+    border: 0;
+    
+}
+
+.field2 {
+    padding: 1rem 0 1rem 1rem;
+    border: 0;
+}
+
+legend {
+    padding: 1rem 0 0 0 ;
+}
+
+label, input {
+    padding: 0.3rem;
+}
+
+.radios {
+    margin: 8px;
+}
+
+textarea {
+    display: flex;
+    justify-content: center;
+    border: 1px solid var(--primary-color);
+    width: 500px;
+}
+button {
+    display: flex;
+    justify-content: right;
+    margin: 2rem 0 0 0;
+}
+
+/* NOT FORM STUF AHHAHHHH */
+
+.contact-info {
+    display: flex;
+    padding: 2rem;
+    justify-content: space-around;
+}
+
+.employees {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.employees img {
+    width: 250px;
+    border: 1px solid var(--primary-color);
+    border-radius: 3px;
+}
+
+.employees figcaption {
+    width: 250px;
+    text-align: center;
+}
+
