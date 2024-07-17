@@ -3,7 +3,7 @@
 :root {
     --primary-color: rgb(55, 55, 108); /* #37376C */
     --secondary-color: rgb(234, 230, 229); /* #EAE6E5 */
-    --accent1-color: rgb(191, 0, 48); /* #BF0030 */
+    --accent1-color: rgb(106, 14, 37); /* #6a0e25 */
     --accent2-color: rgb(14, 12, 48); /* #0E0C30 */
                                 
     --heading-font: 'Roboto Slab', serif;
@@ -186,7 +186,7 @@ nav a {
 
 /**********************************************************
 
-start of CONTACT US? ??
+start of CONTACT US
 
 **********************************************************/
 
@@ -200,27 +200,28 @@ start of CONTACT US? ??
 .form-n-map {
     display: flex;
     justify-content: center;
-    
 }
 
 form {
     display: flex;
-    border: 2px solid var(--primary-color);
-    border-radius: 1px;
+    
+    border: 2px solid var(--accent2-color);
+    color: white;
 }
 
 .fieldsets {
     display: flex;
+    width: 600px;
     flex-direction: column;
-    background-color: var(--secondary-color);
+    background-color: var(--accent2-color);
 }
 
 .map {
-    background-color: var(--primary-color);
-    border-top: 5px solid var(--primary-color);
-    border-right: 7px solid var(--primary-color);
-    border-left: 4px solid var(--primary-color);
-    border-radius: 1px;
+    background-color: var(--accent2-color);
+    border-top: 5px solid var(--accent2-color);
+    border-right: 7px solid var(--accent2-color);
+    border-left: 4px solid var(--accent2-color);
+    
 }
 
 .field1 {
@@ -231,32 +232,63 @@ form {
 }
 
 .field2 {
-    padding: 1rem 0 1rem 1rem;
+    padding: 0 0 0rem 1rem;
     border: 0;
 }
 
+.field1 legend {
+    padding: 1rem 0 0 0;
+}
+
+.field2 p {
+    color: white;
+}
+
 legend {
-    padding: 1rem 0 0 0 ;
+    color: rgb(172, 172, 202);
+
 }
 
 label, input {
     padding: 0.3rem;
+    font-family: var(--paragraph-font);
+    font-size: 16px;
+}
+
+input {
+    color: var(--primary-color);
 }
 
 .radios {
-    margin: 8px;
+    padding: 0 1rem 1rem 0;
 }
 
 textarea {
     display: flex;
     justify-content: center;
     border: 1px solid var(--primary-color);
+    border-radius: 3px;
     width: 500px;
+    font-family: var(--paragraph-font);
+    font-size: 14px;
+    color: var(--primary-color);
 }
+
+.subscribe label {
+    font-size: 13px;
+}
+
 button {
-    display: flex;
-    justify-content: right;
-    margin: 2rem 0 0 0;
+    float: inline-end;
+    margin: 1rem 1rem 0 0;
+    font-family: var(--paragraph-font);
+    color: var(--primary-color);
+}
+
+button:hover {
+    color: var(--accent1-color);
+    text-decoration: underline;
+    border-radius: 4px;
 }
 
 /* NOT FORM STUF AHHAHHHH */
