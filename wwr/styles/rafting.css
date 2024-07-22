@@ -3,7 +3,7 @@
 :root {
     --primary-color: rgb(55, 55, 108); /* #37376C */
     --secondary-color: rgb(234, 230, 229); /* #EAE6E5 */
-    --accent1-color: rgb(106, 14, 37); /* #6a0e25 */
+    --accent1-color: rgb(130, 25, 51); /* #821933 */
     --accent2-color: rgb(14, 12, 48); /* #0E0C30 */
                                 
     --heading-font: 'Roboto Slab', serif;
@@ -204,8 +204,7 @@ start of CONTACT US
 
 form {
     display: flex;
-    
-    border: 2px solid var(--accent2-color);
+    border: 5px solid var(--accent2-color);
     color: white;
 }
 
@@ -213,7 +212,7 @@ form {
     display: flex;
     width: 600px;
     flex-direction: column;
-    background-color: var(--accent2-color);
+    background-color: var(--primary-color);
 }
 
 .map {
@@ -256,7 +255,7 @@ label, input {
 }
 
 input {
-    color: var(--primary-color);
+    color: var(--accent2-color);
 }
 
 .radios {
@@ -271,18 +270,20 @@ textarea {
     width: 500px;
     font-family: var(--paragraph-font);
     font-size: 14px;
-    color: var(--primary-color);
+    font-weight: 450;
+    color: var(--accent2-color);
 }
 
 .subscribe label {
     font-size: 13px;
 }
 
-button {
+.contact-us button {
     float: inline-end;
     margin: 1rem 1rem 0 0;
     font-family: var(--paragraph-font);
-    color: var(--primary-color);
+    font-weight: 500;
+    color: var(--accent2-color);
 }
 
 button:hover {
@@ -307,12 +308,137 @@ button:hover {
 
 .employees img {
     width: 250px;
-    border: 1px solid var(--primary-color);
-    border-radius: 3px;
+    border: 1px solid rgba(55, 55, 108, 0.2);
+    border-radius: 2px;
 }
 
 .employees figcaption {
     width: 250px;
     text-align: center;
+}
+
+/********************************************************
+
+start of TRIPS
+
+********************************************************/
+
+
+.trips-page {
+    margin: 3rem 3rem 3rem 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 3rem;
+}
+
+.trips-page img {
+    width: 100%;
+}
+
+.tell-us {
+    grid-row: 2 / 3;
+    grid-column: 5 / 6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 4rem 1rem;
+    border: 1px solid rgba(55, 55, 108, 0.2);
+    border-radius: 4px;
+    text-align: center;
+}
+
+.trips-page * button {
+    border: 0;
+    border-radius: 2px;
+    margin: 1rem;
+    padding: 1rem;
+    font-family: var(--paragraph-font);
+    font-size: 18px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* dawg the buttons are dependant on the amount of text and that's crazy but im not dealing with that, i have to work on the other page buddy */
+
+.trips-page * button:hover {
+    border-radius: 2px;
+    text-decoration: none;
+    background-color: var(--accent1-color);
+}
+
+.tell-us button {
+    border-radius: 2px;
+    margin: 0;
+    padding: 1rem 3rem;
+}
+
+.trips button {
+    width: 50%;
+}
+
+.skelly-trip {
+    grid-row: 1 / 1; /* gone */
+    grid-column: 1 / 6; /* 2 / 6; */
+    display: flex;
+    
+    align-items: center;
+}
+
+.skelly-about {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    margin: 0 0 0 1rem;
+    max-width: 30%;
+    font-weight: 600;
+    text-align: center;
+    padding: 1rem 1rem 1rem 5rem;
+}
+
+.skelly-about p {
+    font-weight: 400;
+}
+
+.skelly-about button {
+    font-size: 18px;
+    padding: 1rem
+}
+
+.trips {
+    grid-row: 2 / 3;
+    grid-column: 1 / 5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.trips figure {
+    margin: 0;
+}
+
+.trips figcaption {
+    text-align: center;
+    max-width: 100%;
+}
+
+.trips-page table {
+    grid-row: 3 / 4;
+    grid-column: 1 / 6;
+}
+
+th, td {
+    background-color: rgba(55, 55, 108, 0.2); /* thing reasons */
+    
+}
+
+th {
+    padding: 6px;
+}
+
+td {
+    padding: 1rem;
+    text-align: center;
+    max-width: 200px;
 }
 
