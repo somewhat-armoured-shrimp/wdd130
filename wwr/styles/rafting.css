@@ -367,10 +367,18 @@ start of TRIPS
     background-color: var(--accent1-color);
 }
 
-.tell-us button {
+.tell-us a {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
     border-radius: 2px;
-    margin: 0;
-    padding: 1rem 3rem;
+}
+
+.tell-us a:hover {
+    border-radius: 2px;
+    text-decoration: none;
+    background-color: var(--accent1-color);
 }
 
 .trips button {
