@@ -202,7 +202,7 @@ start of CONTACT US
     justify-content: center;
 }
 
-form {
+.contact-us form {
     display: flex;
     border: 5px solid var(--accent2-color);
     color: white;
@@ -435,6 +435,10 @@ start of TRIPS
     grid-column: 1 / 6;
 }
 
+.trips-page span {
+    color: rgba(55, 55, 108, 0.8);
+}
+
 th, td {
     background-color: rgba(55, 55, 108, 0.2); /* thing reasons */
     
@@ -450,3 +454,129 @@ td {
     max-width: 200px;
 }
 
+
+/********************************************************
+
+start of HOMEPAGE :) i didn't know this was due on Tuesday ahaaha
+
+kk everything but the extra images look really nice but i'm not spending
+another 3 hours at a dead end today. 
+still looks better than About Us let's be real
+
+********************************************************/
+
+body {
+    margin: 0;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home h1 {
+    position: relative;
+    background-color: var(--accent2-color);
+    color: white;
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+    padding: 2rem 0 2rem;
+    margin: 0;
+}
+
+.banner {
+    margin: 0;
+    background-color: var(--accent2-color); /* adds a little border-like thingie 
+    on the bottom but it's consistent with Contact Us*/
+}
+
+.banner img {
+    width: 100vw;
+    height: auto;
+    background-color: var(--accent1-color);
+    opacity: 66%;
+
+}
+
+.book-trip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 7rem 2rem 7rem;
+    padding: 0rem 0 1.3rem 0;
+    /* border: 1px solid rgba(55, 55, 108, 0.2); */
+    border-radius: 3px;
+}
+
+.book-trip a {
+    padding: 1rem 3rem;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.book-trip a:hover {
+    background-color: var(--accent1-color);
+    color: white;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.home-content {
+    display: grid;
+    /* grid-template-columns: 4fr 1fr; */
+    gap: 2rem;
+    margin: 0 7rem 0 7rem;
+}
+
+.home-content form {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    border: 1px solid rgba(55, 55, 108, 0.2);
+    border-radius: 3px;
+    padding: 2rem;
+    grid-column: 3 / 4;
+
+}
+
+.home-content input {
+    margin: 1rem;
+}
+
+.home-content button {
+    margin: 1rem;
+    padding: 1rem;
+    color: white;
+    font-family: var(--paragraph-font);
+    background-color: var(--primary-color); 
+    border: 0;
+    border-radius: 2px;
+}
+
+.home-content button:hover {
+    background-color: var(--accent1-color);
+    color: white;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.extra-images {
+    display: grid;
+}
+
+.extra-images img {
+    width: 100%;
+}
+
+.extra-images p {
+    margin: 3rem 0 3rem 0;
+}
+
+.extra-images span {
+    color: var(--accent1-color);
+    font-weight: 500;
+}
