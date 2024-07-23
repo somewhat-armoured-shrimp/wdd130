@@ -488,16 +488,12 @@ body {
 
 .banner {
     margin: 0;
-    background-color: var(--accent2-color); /* adds a little border-like thingie 
-    on the bottom but it's consistent with Contact Us*/
+    
 }
 
 .banner img {
-    width: 100vw;
+    width: 100%;
     height: auto;
-    background-color: var(--accent1-color);
-    opacity: 66%;
-
 }
 
 .book-trip {
