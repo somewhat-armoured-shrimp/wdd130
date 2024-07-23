@@ -488,7 +488,6 @@ body {
 
 .banner {
     margin: 0;
-    
 }
 
 .banner img {
@@ -536,7 +535,6 @@ body {
     border-radius: 3px;
     padding: 2rem;
     grid-column: 3 / 4;
-
 }
 
 .home-content input {
